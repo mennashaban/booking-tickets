@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeBody (color){
+            document.body.style.background= color;
+        }
+  
+ function changeHeading(color){
+document.getElementById("heading").style.background = color;
+ }
+</script>
+</head>
+    <body>
+        <h1 id="heading" >book your flight </h1>
+        <p> this is </p>
+        <hr>
+        <div>
+        <label> change webPage background to :</label>
+        <button type="button" onclick ="changeBody('lime');">lime</button>
+        <button type ="button" onclick ="changeBody('orange');">orange</button>
+        </div>
+        <br>
+        <div>
+            <label>change heading background to :</label>
+            <button type ="button" onclick="changeHeading('red');">red </button>
+            <button type ="button" onclick="changeHeading('green');">green </button>
+            <button type ="button" onclick="changeHeading('blue');">blue </button>
+            
+
+        </div>
+        <br>
+        <button> <a href="Home.html"> Exit admin page</a></button>
+</body>
+</html>

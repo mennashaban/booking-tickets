@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/masre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <script src="java script/main.js"></script>
+
+    <nav >
+        <div class="logo">
+             <p>Alpha-24</p>
+             </div>
+             <ul>
+                <li><a href="" target="_blank">Contact Us</a> </li>
+                <li><a href="About.html" target="_blank">About Us</a> </li>
+                    <li><a href="register.html">Register</a> </li>
+                    <li><a href="login.html">Log in</a> </li>
+    </ul>
+    </nav>
+    
+        
+           
+s <div class="slider">
+<div class="image">
+    <input type="radio" name="slide" id="img1" checked>
+    <input type="radio" name="slide" id="img2">
+    
+
+    <div class="m1"><img src="https://www.farewebnews.it/images/how-to-remove-the-login-screen-on-windows-10-136410722451203901-161023040317.jpg"  ></div>
+    <div class="m2"><img src="https://www.olxpeople.com/blog/wp-content/uploads/2021/03/Income-Tax-Login-And-Registration-Guide.jpg"  </div>
+    
+</div>
+    
+    <div class="dots">
+        <label for="img1"></label>
+        <label for="img2"></label>
+       
+    </div>
+</div> 
+            
+
+            
+            
+        
+
+    <div class="list">
+  
+        <div class="login-box">
+            <h3 class="title">login</h3>
+            <form name="login" >
+                <ul class="list1">
+             <li>
+     <i class="fa fa-user"></i>
+                 <input type="text" placeholder="Username" required class="un" name="username" id="username">
+             </li>
+             <br>
+             <br>
+             <li>
+                 <i class="fa fa-lock"></i>
+
+                <input type="password" placeholder="password" required class="pw" name="password" id="password">
+            </li>
+            <br>
+            <li class="re">don't have an account yet?<a class="re1" href="register.html" target="_blank"> Register</a> here.</li>        
+        <li>
+            <button type="submit" onclick="validate()">login</button>
+        </li>
+    
+                </ul>
+               
+            </form>
+          </div>
+        </div>
+      
+
+        <div class="main">
+            <ul>
+                <li class="item" ><i class="fa fa-bars"></i></li>
+                <li class="item"  ><i class="fa fa-home"></i> <a href="home.html">Home</a></li>
+                <li class="item"><i class="fa fa-user"></i>User Account</li>
+                <li class="item"><i class="fa fa-plane"></i>Flight Status</li>
+                <li class="item" ><i class="fa fa-calendar"></i>Trips Schedule</li>
+                <li class="item" ><i class="fa fa-ticket"></i><a href="booking.html">Booking</a></li>
+                <li class="item"><i class="fa fa-envelope-square"></i>Messages</li>
+                <li class="item"><i class="fa fa-bell"></i>Notifications</li>
+                <li class="item"><i class="fa fa-question-circle"></i>Help</li>
+                <li class="item" onclick="logout()"><i class="fa fa-sign-out" ></i>Log out</li>
+                <li class="item"><i class="fa fa-facebook"></i><a href="https://m.facebook.com/airbus/">Facebook</a></li>
+                <li class="item"><i class="fa fa-twitter"></i><a href="https://twitter.com/airbus?lang=en">twitter</a></li>
+                <li class="item"><i class="fa fa-instagram"></i><a href="https://www.instagram.com/airbus/">Instgram</a></li>
+            </ul>
+            </div>
+
+
+</body>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    .logo p{
+        margin-left: 82px;
+        padding: 0px;
+        font-family: 'Style Script', cursive;
+        font-size: 60px;
+        float: left;
+        position: relative;
+        margin-top: 0;
+    
+    }
+    nav{
+        width: 100%;
+        background-color:darksalmon;
+        position: fixed;
+    padding: 0px ;
+    height: 12%;
+        z-index: 1;
+        top: 0;
+    }
+    nav ul{
+        display: flex;
+        direction: rtl;
+        padding: 0px;
+        list-style: none;
+        
+    
+    }
+    nav ul li{
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0px 32px;
+        
+    }
+    nav ul li a{
+        color: white;
+        font-family:initial;
+    }
+    nav ul li a:hover{
+        color:black;
+    }
+     a{
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        font-size:xx-large;
+       color: black;
+        text-decoration-line: none;
+        position: relative;
+    }
+    .nav {
+        display: flex;
+        
+    }
+    .nav a{
+        font-family:initial;
+        color:black;
+        background-color: lightcoral;
+        width: 50%;
+    }
+    
+    .slider{
+        box-sizing: border-box;
+    }
+    
+    
+    .list {
+        background-color: bisque;
+        margin-top: 401px;
+    }
+    .list p a{
+        font-family: 'Courgette', cursive;
+        color: brown;
+    
+    }
+    .list p:hover{
+        background-color:tan;
+    }
+    .list p{
+       
+        margin-left: 28%;
+        width: 51%;
+        text-align: center
+    }
+    
+    
+    
+    .main ul{
+        list-style: none;
+    }
+    
+    li .fa{
+        margin-right: 21px;
+        margin-bottom: 40px;
+    }
+    .item{
+        font-size: 28px;
+        margin-left: -10px;
+    }
+    .main{
+        background-color:wheat;
+    
+    
+        width: 70px;
+        height: 100vh;
+    
+        position: fixed;
+        top:0;
+        left:0;
+        cursor: pointer;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        z-index: 1;
+        transition: .3s ease;
+    }
+    
+    .main:hover{
+        width : 290px;
+        overflow-y: scroll;
+    }
+    
+       
+    .main li:hover{
+        background-color:white;
+    }
+    .title{
+        direction: rtl;
+        padding: 20px;
+        padding-right: 40px;
+        font-family: 'Courgette', cursive;
+    }
+    .details{
+        padding-right: 20px;
+    }
+    .details ul{
+        list-style:none;
+        direction:rtl ;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .details li{
+    padding-top: 62px;
+    font-size: 30px;
+    }
+    img {
+         width: 100%; 
+        height: 400px;
+    }
+    .m1,
+    .m2{
+        position: absolute;
+          width: 100%; 
+    }
+     /* .m1{
+        left:-100%;
+    }  */
+    
+    
+     #img1,#img2{
+        margin-left: 700px;
+        z-index: 1;
+        position: relative;
+        top: 373px;
+      display: flex; 
+      
+    } 
+    
+    input#img1 {
+        float: left;
+        top: 370px;
+        left: -17px;
+    }
+    
+    #img1:checked ~ .m2 {
+        left: -100%;
+    }
+    #img2:checked ~ .m1 {
+        left: -100%;
+    }
+    .login-box{
+    background-color: rgb(240, 211, 158) ;
+    text-align-last: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    padding: 100px 100px;
+    list-style: none;
+    
+    
+    }
+    .title{
+        text-align-last: center;
+        margin-bottom: 10px;
+        height: 50px;
+        font-size: xx-large;
+    }
+    .login-box input{
+    
+        width: 40%;
+        height: 80%;
+        border: thick black;
+     padding:  20px 30px;
+     list-style: none;
+     text-align-last: center;
+     font-size: large;
+    }
+    .username{
+        padding-top: 40px;
+        
+    }
+    .list1{
+        list-style: none;
+     text-align: left;   
+    }
+    .login-box button{
+        text-align: left;
+        padding: 10px 50px;
+        color:black;
+        background-color:white;
+        
+      
+        
+    }
+    .list1 i {
+    font-size: xx-large;
+    }
+    .re1{
+    
+        font-size:medium ;
+        color: blue;
+
+   
+    }
+    </style>
